@@ -1,4 +1,4 @@
-# IoT-BME280
+# BME280
 
 The Adafruit BME280 sensor is an environmental sensor with temperature, barometric pressure and humidity. For this IoT starter project, the sensor was connected to the Raspberry Pi3 I2C interface. The initial project reads the data from the bme280 sensor, calculates the maximum, minimum, and average temperature for the defined sliding window, and displays a the data points on a line graph.
 
