@@ -14,3 +14,7 @@ BME280_Statitics.scala gets the data from a Kafka topic, calculates the maximum,
 BME280_dashboard uses Node.js to get the maximum, minimum, average, and current temperature from Kafka topic bme280-stats-topic and display it on a line chart using Google Charts. This chart updates based on the sliding window defined in the Spark program.
 
 BME280_dashboard_simple uses Node.js to get the current temperature from Kafka topic bme280-topic and immediately display it on a line chart using Google Charts.
+
+-----
+
+Pymodbus is a separate project but included with this code since it is specific to the BME280. It is a Modbus server created by combining python code from bashwork and controleverything for a POC to connect KEPServerEX to a BME280 temperature, humidity, and pressure sensor connected to a Raspberry Pi I2C bus.
