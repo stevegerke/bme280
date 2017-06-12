@@ -53,7 +53,8 @@ public class BME280_Producer {
 				System.out.println(bme280_value);
 
 				Future<RecordMetadata> future = producer.send(new ProducerRecord<String, String>(topicName, Integer.toString(i), bme280_value));
-				RecordMetadata recordMetadata = future.get();
+				//The following line is commented out so that an exception is not raise if the Kafka server is not found
+				//RecordMetadata recordMetadata = future.get();
 
 				i = i + 1;
 				if (i == 2147483647) i = 1;
