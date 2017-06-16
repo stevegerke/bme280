@@ -18,7 +18,7 @@ var io = socketIO(server);
 app.use(express.static(publicPath));
 
 var Consumer = kafka.Consumer,
-client = new kafka.Client(),
+client = new kafka.Client('kafka-server:2181'),
 	consumer = new Consumer(client, [{
 		topic: topic, partition: partition}], {autoCommit: false}
 	);
