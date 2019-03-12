@@ -9,7 +9,7 @@ BME280_Producer.java reads the data from the bme280 sensor and sends it to Kafka
 
 SimpleConsumer.java gets the data from a Kafka topic and writes it to HDFS.
 
-BME280_Statitics.scala gets the data from a Kafka topic, calculates the maximum, minimum, and average temperature, and sends it to a new Kafka topic.
+BME280_Statistics.scala gets the data from a Kafka topic, calculates the maximum, minimum, and average temperature, and sends it to a new Kafka topic.
 
 BME280_dashboard uses Node.js to get the maximum, minimum, average, and current temperature from Kafka topic bme280-stats-topic and display it on a line chart using Google Charts. This chart updates based on the sliding window defined in the Spark program.
 
